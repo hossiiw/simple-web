@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+
+/* -----------------------HEADER------------------------------------ */
+
+#header{
+    background: url('../image/Coding-Wallpapers12.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed ;
+    background-color:#100e12;
+    background-blend-mode: overlay;
+    text-align: center;
+}
+
+
+#header nav ul{
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    background-color: rgb(22, 21, 20);
+    height: 50px;
+}
+
+
+#header nav ul li a{
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+    transition: 1s;
+}
+
+#header nav ul li a:hover{
+    color: coral;
+}
+
+
+
+
+
+#header h1{
+    font-size: 60px;
+    font-family: 'Persian', sans-serif;
+    position: relative;
+    top: 40%;
+}
+
+#header h1 span{
+    color: gold;
+}
+
+#header p{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    width: 500px;
+    height: 70px;
+    font-weight: bold;
+    margin: auto;
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    z-index: 1;
+    transform: 5s;
+    color: black;
+    font-size: 20px;
+    animation: phColor 3s infinite;
+
+}
+
+
+#header p span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    border-top-left-radius: 34px;
+    border-bottom-right-radius: 34px;
+    background-color: #fff;
+    z-index: -1;
+    transition: 1s;
+    
+}
+
+
+@keyframes phColor{
+    0%{color: #100e12;  transform: scale(1);}
+    100%{color: red;transform: scale(2); transition: 10s;}
+    /* 40%{color: purple;transform: scale(0.8);}
+    60%{color: yellow;transform: scale(1.1);}
+    80%{color: green;transform: scale(1.4);}
+    100%{color: gray;transform: scale(1.7);} */
+}
+
+/* #header p:hover{
+    color: black;
+    font-size: 20px;
+    animation: phColor 3s infinite;
+} */
+
+#header p:hover span{
+    width: 100%;
+}
+
+
+/* --------------------------------MEMBER------------------------------- */
+
+#members{
+    padding: 20px;
+    color: black;
+    text-align: center;
+}
+
+#members h2{
+    padding: 20px;
+}
+
+#members ul{
+    list-style: none;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+#members p{
+    width: 500px;
+    padding: 10px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+#members ul li{
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 2px black;
+    cursor: pointer;
+    transition: 1s;
+}
+#members ul li:hover{
+    transform: translateY(-7px);
+    background: linear-gradient(rgba(0,0,0.1,0.1),gray);
+}
+#members ul li h3{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+#members ul li img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+}
+
+/* ----------------------ABOUT------------------------ */
+
+#about{
+    background: url("../image/wallpaper.jpg");
+    height: 100vh;
+    background-color: #100e12;
+    background-blend-mode: overlay;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    width: 700px;
+    background-color: rgba(135,135,135,0.3);
+    border-radius: 50%;
+    text-align: center;
+    padding: 50px;
+    color: #fff;
+}
+
+.circle h1{
+    padding: 20px;
+}
+
+.circle p{
+    line-height: 1.5;
+    /* text-align: justify; */
+}
+
+
+
+/* /* ------------------------ICON-------------------- */
+
+#icon ul{
+    text-align: center;
+    background-color: rgba(135,135,135,1);
+}
+
+#icon ul li{
+    display: inline-block;
+    padding: 10px;
+}
+
+#icon ul li:hover{
+    transform: translateY(-7px);
+}
